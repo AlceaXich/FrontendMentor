@@ -15,6 +15,7 @@ body {
     box-shadow: 2px 2px 6px rgb(14 8 44 / 97%)
 }
 .container-children{
+    display: flex;
     width: 40em; /* Ancho del div en píxeles */
     height: 25em; /* Alto del div en píxeles */
     position: absolute;
@@ -23,55 +24,86 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     border-radius: 10px 10px 100px 10px; 
+    flex-direction: column;
 }
-
-.mi-section {
-    padding: 20px;
-    margin: 10px;
+.inputs {
+    display: flex; /* Utilizamos Flexbox para lograr la disposición en fila */
+    /* Puedes ajustar los márgenes y otros estilos del contenedor principal según tus necesidades */
+    margin: 20px;
+    padding: 10px;
+}
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+    /*padding: 20px;
+    margin: 10px;*/
     border-radius: 5px;
     flex: 1; /* La sección ocupará todo el ancho disponible */
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
 }
+
 /* Estilo para el label */
-.mi-section label {
-    padding: 30px 10px 10px;
+.form-group label {
+    display: block;/* Hace que el label sea un elemento de bloque */
+    font-weight: bold; /* Opcional: Establece negrita para el label */
+    /* Ajusta los márgenes del label según tus necesidades */
     margin-bottom: 5px; /* Espaciado inferior entre el label y el input */
+    color: rgb(161, 155, 155);
+    
 }
 
+
 /* Estilo para el input */
-.mi-section input {
+.form-group input {
+    display: block; /* Hace que el input sea un elemento de bloque */
+    margin-top: 5px;
     width: 100px; /* Ajusta el ancho aquí según tus necesidades */
     padding: 8px; /* Opcional: ajusta el relleno interno del input */
     font-size: 16px; /* Opcional: ajusta el tamaño de fuente del texto */
-    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
 }
+
 .mi-result {
-    display: flex;
     flex-direction: column;
     /* Ajusta el ancho y el espacio entre los párrafos según tus necesidades */
     width: 300px;
     gap: 10px;
+    margin: 20px;
 }
 
 /* Estilos para los párrafos */
 .mi-result p {
     margin: 0;
     padding: 10px;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 40px;
     color:black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.mi-result p span {
+    color:#0e082c;
 }
 .line {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 0;
     right: 30%;
-    height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
-    background-color: #0e082c; /* Color de la línea */
+    height: 0.5px; /* Ajusta el grosor de la línea según tus necesidades */
+    background-color: #ccc; /* Color de la línea */
     transform: translateY(-50%); /* Centra verticalmente la línea */
 
+}
+.line button{
+    border: none;
+    background-color: #0e082c;
+    border-radius: 100%; /* Hace que los bordes sean redondeados */
+    
+}
+.line button img{
+    height: 40px;
+    width: 30px;
 }
 .attribution { 
     font-size: 11px; 
@@ -85,3 +117,4 @@ body {
 .attribution a { 
     color: hsl(0, 0%, 100%); 
 }
+
