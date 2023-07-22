@@ -1,0 +1,87 @@
+body {
+    background-image: url(./background.jpg);
+    background-color: blanchedalmond;
+    height: 100vh; /* Opcional: ajusta el alto de la página completa */
+    margin: 0;
+}
+.container-base {
+    background-color: #0e082c; 
+    width: 55em; /* Ancho del div en píxeles */
+    height: 35em; /* Alto del div en píxeles */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    box-shadow: 2px 2px 6px rgb(14 8 44 / 97%)
+}
+.container-children{
+    width: 40em; /* Ancho del div en píxeles */
+    height: 25em; /* Alto del div en píxeles */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 100px 10px; 
+}
+
+.mi-section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1; /* La sección ocupará todo el ancho disponible */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/* Estilo para el label */
+.mi-section label {
+    padding: 30px 10px 10px;
+    margin-bottom: 5px; /* Espaciado inferior entre el label y el input */
+}
+
+/* Estilo para el input */
+.mi-section input {
+    width: 100px; /* Ajusta el ancho aquí según tus necesidades */
+    padding: 8px; /* Opcional: ajusta el relleno interno del input */
+    font-size: 16px; /* Opcional: ajusta el tamaño de fuente del texto */
+    border-radius: 5px 5px 5px 5px;
+
+}
+.mi-result {
+    display: flex;
+    flex-direction: column;
+    /* Ajusta el ancho y el espacio entre los párrafos según tus necesidades */
+    width: 300px;
+    gap: 10px;
+}
+
+/* Estilos para los párrafos */
+.mi-result p {
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+    color:black;
+}
+.line {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 30%;
+    height: 1px; /* Ajusta el grosor de la línea según tus necesidades */
+    background-color: #0e082c; /* Color de la línea */
+    transform: translateY(-50%); /* Centra verticalmente la línea */
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: burlywood;
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+}
+
+.attribution a { 
+    color: hsl(0, 0%, 100%); 
+}
