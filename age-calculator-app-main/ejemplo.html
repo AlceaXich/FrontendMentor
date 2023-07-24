@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cambiar el color del borde de un input al hacer clic</title>
+    <style>
+        /* Estilo para el input */
+        input {
+            padding: 10px;
+            border: 1px solid #ccc; /* Color del borde por defecto */
+            border-radius: 4px;
+            outline: none; /* Elimina el resaltado predeterminado del foco */
+        }
+
+        /* Estilo para el input cuando está enfocado */
+        input:focus {
+            border-color: #007bff; /* Cambia el color del borde cuando el input está enfocado */
+            box-shadow: 0 0 5px #007bff; /* Agrega un efecto de sombra al enfocar el input (opcional) */
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Escribe aquí">
+</body>
+</html>
+
