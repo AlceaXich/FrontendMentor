@@ -98,12 +98,7 @@ body {
 .mi-result p span {
     color:#864cff;
 }
-.line hr{
-    border: none; /* Elimina el borde predeterminado de la línea */
-    border-top: 1px solid #ccc; /* Establece el grosor y color de la línea */
-    margin: px 0; /* Ajusta los márgenes superiores e inferiores de la línea según tus necesidades */
 
-}
 .line button{
     margin-left: auto; /* Empuja el botón al final de la línea */
     padding: 10px;
