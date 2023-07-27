@@ -8,13 +8,18 @@ function obtenerDatos(){
     let dayElement = document.getElementById("day");
     let monthElement = document.getElementById("month");
     let yearElement = document.getElementById("year");
-    let daySpanElement = document.getElementById("resultYears");
+
+    let yearSpanElement = document.getElementById("resultYears");
 
     let valorday = dayElement.value;
     let valormonth = monthElement.value;
     let valoryear = yearElement.value;
 
-    daySpanElement.textContent = valoryear - currentYear;
+    let totalyears = currentYear - valoryear;
+    if (currentMonth < valormonth){
+        totalyears = totalyears - 1;
+    }
+    yearSpanElement.textContent = totalyears;
 
     console.log("El valoe de day ingresado es: " + valorday);
     console.log("El valoe de month ingresado es: " + valormonth);
