@@ -100,17 +100,17 @@ body {
 }
 
 .line button{
-    margin-left: auto; /* Empuja el botón al final de la línea */
+    margin-left: 500px; /* Empuja el botón al final de la línea */
     padding: 10px;
-    background-color: #007bff;
+    background-color: #864cff;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
-    
+    margin-top: 0px;
 }
 .line button img{
-    height: 40px;
+    height: 30px;
     width: 30px;
 }
 .attribution { 
