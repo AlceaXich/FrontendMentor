@@ -17,16 +17,26 @@ function obtenerDatos(){
     let valorday = dayElement.value;
     let valormonth = monthElement.value;
     let valoryear = yearElement.value;
+    
+    var errorInput = document.getElementById("errorinput");
 
-    let totalyears = currentYear - valoryear;
-    let totalmonths = currentMonth + (12 - valormonth);
-    let totaldays =currentDay -  valorday;
+    if (valorday != "" && valormonth != "" && valoryear != ""){
+        let totalyears = currentYear - valoryear;
+        let totalmonths = currentMonth + (12 - valormonth);
+        let totaldays =currentDay -  valorday;
 
-    if (currentMonth < valormonth){
-        totalyears = totalyears - 1;
+        if (currentMonth < valormonth){
+            totalyears = totalyears - 1;
+        }
+
+        yearSpanElement.textContent = totalyears;
+        monthSpanElement.textContent =totalmonths;
+        daySpanElement.textContent =totaldays;
+
+        errorInput.style.display = "none"
+        return true;
+    }else{
+        errorInput.style.display = "inline";
+        return false;
     }
-
-    yearSpanElement.textContent = totalyears;
-    monthSpanElement.textContent =totalmonths;
-    daySpanElement.textContent =totaldays;
 }
