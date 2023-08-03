@@ -1,27 +1,29 @@
 let currentDate = new Date();
 
+/* SEPARANDO POR DIA, MES Y AÑO */
 let currentDay = currentDate.getDate();
 let currentMonth = currentDate.getMonth() + 1;
 let currentYear = currentDate.getFullYear();
 
 
 function obtenerDatos(){
-    let dayElement = document.getElementById("day");
-    let monthElement = document.getElementById("month");
-    let yearElement = document.getElementById("year");
+    /*  OBTENEMOS LOS VALORES DE LOS INPUTS */
+    let dayElement = document.getElementById("day").value;
+    let monthElement = document.getElementById("month").value;
+    let yearElement = document.getElementById("year").value;
 
+    /* OBTENEMOS EL VALOR DE  LOS GUIONES */
     let yearSpanElement = document.getElementById("resultYears");
     let monthSpanElement = document.getElementById("resultMonths");
     let daySpanElement =document.getElementById("resultDays");
 
-    let valorday = dayElement.value;
-    let valormonth = monthElement.value;
-    let valoryear = yearElement.value;
-    
-    var errorInput = document.getElementById("errorinput");
+    /*  MENSAJE DE ERROR */
+    let erroryear= document.getElementById("erroryear");
+    let errormonth= document.getElementById("errormonth");
+    let errorday= document.getElementById("errorday");
 
-    if (valorday != "" && valormonth != "" && valoryear != ""){
-        let totalyears = currentYear - valoryear;
+    if (dayElement != "" && monthElement != "" && yearElement != ""){
+        /*let totalyears = currentYear - valoryear;
         let totalmonths = currentMonth + (12 - valormonth);
         let totaldays =currentDay -  valorday;
 
@@ -31,12 +33,16 @@ function obtenerDatos(){
 
         yearSpanElement.textContent = totalyears;
         monthSpanElement.textContent =totalmonths;
-        daySpanElement.textContent =totaldays;
+        daySpanElement.textContent =totaldays;*/
 
-        errorInput.style.display = "none"
+        erroryear.style.display = "none";
+        errormonth.style.display = "none";
+        errorday.style.display = "none";
         return true;
     }else{
-        errorInput.style.display = "inline";
+        erroryear.style.display = "inline";
+        errormonth.style.display = "inline";
+        errorday.style.display = "inline";
         return false;
     }
 }

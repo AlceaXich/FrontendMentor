@@ -35,12 +35,13 @@ body {
 }
 .form-group {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     /*padding: 20px;
     margin: 10px;*/
     border-radius: 5px;
     flex: 1; /* La sección ocupará todo el ancho disponible */
     align-items: flex-start;
+    padding-bottom: 0px;
 }
 
 /* Estilo para el label */
