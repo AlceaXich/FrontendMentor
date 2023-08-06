@@ -79,7 +79,9 @@ body {
 .form-group input:focus {
     border-color: #864cff; /* Cambia el color del borde cuando el input está enfocado */
 }
-
+#buttoncalcular:active{
+    background-color: #000000; /* Cambia el color al presionar */
+}
 .mi-result {
     flex-direction: column;
     /* Ajusta el ancho y el espacio entre los párrafos según tus necesidades */

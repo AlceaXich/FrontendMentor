@@ -23,7 +23,7 @@ function obtenerDatos(){
     let errorday= document.getElementById("errorday");
 
     if (dayElement != "" && monthElement != "" && yearElement != ""){
-        /*let totalyears = currentYear - valoryear;
+        let totalyears = currentYear - valoryear;
         let totalmonths = currentMonth + (12 - valormonth);
         let totaldays =currentDay -  valorday;
 
@@ -33,7 +33,7 @@ function obtenerDatos(){
 
         yearSpanElement.textContent = totalyears;
         monthSpanElement.textContent =totalmonths;
-        daySpanElement.textContent =totaldays;*/
+        daySpanElement.textContent =totaldays;
 
         erroryear.style.display = "none";
         errormonth.style.display = "none";

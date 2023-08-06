@@ -101,7 +101,7 @@ This challenge is completely free. Please share it with anyone who will find it 
 **Have fun building!** 🚀
 
 ### To do
--[] Active states: al hacer click en el boton cambiar de color a negro
+-[x] Active states: al hacer click en el boton cambiar de color a negro
 -[] Error empty: mensaje de campo requerido de color rojo "This is a field requried", borde de los campos color rojo y label color rojo
 -[] Error invalid: mensaje de campos invalidos de color rojo "Must be a valid day, a valid month y in the past, borde rojo y label rojo
 -[] Error whole form: mensaje de color rojo "Must be a valid date"
