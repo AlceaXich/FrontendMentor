@@ -6,6 +6,7 @@ let currentMonth = currentDate.getMonth() + 1;
 let currentYear = currentDate.getFullYear();
 
 let dayInput, monthInput, yearInput;
+
 function validarDatos(){
     /*  OBTENEMOS LOS VALORES DE LOS INPUTS */
     let day= document.getElementById("day").value;
@@ -17,49 +18,51 @@ function validarDatos(){
     let errormonth= document.getElementById("errormonth");
     let errorday= document.getElementById("errorday");
 
+    let errormenssaje = "This field is required.";
+
     /* Validando Year*/
-    if(year === ""){
-        erroryear.textContent = "This field is required.";
+    if(year === "" || month == "" || day == ""){
+        erroryear.textContent = errormenssaje;
+        errormonth.textContent = errormenssaje;
+        errorday.textContent = errormenssaje;
+        console.log("Datos vacios");
         return false;
-    }else if(year > 2023){
-        erroryear.textContent = "Must be a valid year";
+
+    }else if (year >= currentYear || month >= currentMonth || day >= currentDay){
+        console.log("La fecha es mayor o igual a la actual");
+        alert("¡La fecha ingresada no debe ser mayor o igual a la fecha actual!");
         return false;
     }else{
         erroryear.textContent = "";
-    }
-
-    /* Validando Month*/
-    if(month == ""){
-        errormonth.textContent = "This field is required.";
-        return false;
-    }else if(month > 13){
-        errormonth.textContent = "Must be a valid month";
-        return false;
-    }else{
         errormonth.textContent = "";
-    }
-
-    /* Validando Day*/
-    if(day == ""){
-        errorday.textContent = "This field is required.";
-        return false;
-
-    }else if(day > 32){
-        errorday.textContent = "Must be a valid day";
-        return false;
-    }else{
         errorday.textContent = "";
     }
-    day = dayInput;
-    month = monthInput;
-    year = yearInput;
+    // validar si la fecha es valida o no
+    let date = new Date(year, month-1,day);
+    if (date.getFullYear() === year && date.getMonth() === month - 1 && date.getDay() === day){
+        erroryear.textContent = "";
+        errormonth.textContent = "";
+        errorday.textContent = "";
+        console.log("La fecha es valida");
+    }else{
+        console.log("La fecha es invalida");
+        erroryear.textContent = "Must be a valid year";
+        errormonth.textContent = "Must be a valid month";
+        errorday.textContent = "Must be a valid day";
+        return false;
+    }
+    
+    dayInput = day;
+    monthInput = month;
+    yearInput = year;
+    console.log("day");
     return true;
 }
 
 function Calculadora(){
 
-    validarDatos();
-    
+    if (validarDatos() == true){
+    console.log(dayInput)
 
     /* OBTENEMOS EL VALOR DE  LOS GUIONES */
     let yearSpanElement = document.getElementById("resultYears");
@@ -78,5 +81,5 @@ function Calculadora(){
     yearSpanElement.textContent = totalyears;
     monthSpanElement.textContent =totalmonths;
     daySpanElement.textContent =totaldays;
-
+}
 }

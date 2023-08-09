@@ -54,6 +54,12 @@ body {
     
 }
 
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
 
 /* Estilo para el input */
 .form-group input {
