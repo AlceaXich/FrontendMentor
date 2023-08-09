@@ -2,7 +2,7 @@ let currentDate = new Date();
 
 /* SEPARANDO POR DIA, MES Y AÑO */
 let currentDay = currentDate.getDate();
-let currentMonth = currentDate.getMonth() + 1;
+let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
 let dayInput, monthInput, yearInput;
@@ -28,7 +28,7 @@ function validarDatos(){
         console.log("Datos vacios");
         return false;
 
-    }else if (year >= currentYear || month >= currentMonth || day >= currentDay){
+    }else if (year >= currentYear && month >= currentMonth && day >= currentDay){
         console.log("La fecha es mayor o igual a la actual");
         alert("¡La fecha ingresada no debe ser mayor o igual a la fecha actual!");
         return false;
@@ -39,7 +39,13 @@ function validarDatos(){
     }
     // validar si la fecha es valida o no
     let date = new Date(year, month-1,day);
-    if (date.getFullYear() === year && date.getMonth() === month - 1 && date.getDay() === day){
+
+    console.log(date.getFullYear(), year);
+    console.log(date.getMonth(), (month-1));
+    console.log(date.getDay(), day);
+
+    if (date.getFullYear() == year && date.getMonth() == month - 1 && date.getDay() == day){
+        
         erroryear.textContent = "";
         errormonth.textContent = "";
         errorday.textContent = "";
