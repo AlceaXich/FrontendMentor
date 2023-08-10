@@ -1,4 +1,4 @@
-let currentDate = new Date();
+const currentDate = new Date();
 
 /* SEPARANDO POR DIA, MES Y AÑO */
 let currentDay = currentDate.getDate();
@@ -28,6 +28,15 @@ function validarFecha(dia, mes, año){
         return false;
     }
 }
+// Esta funcion evalua si la fecha ingresada es igual a la fecha actual o mayor
+function isCurrentOLargerDate(day,month,year){
+    if(day >= currentDay && month >= currentMonth && year >= currentYear){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function validarDatos(){
     console.log(currentDay,currentMonth,currentYear);
     /*  OBTENEMOS LOS VALORES DE LOS INPUTS */
@@ -35,8 +44,21 @@ function validarDatos(){
     let month = parseInt(document.getElementById("month").value);
     let year = parseInt(document.getElementById("year").value);
 
-    if (validarFecha(day, month, year) == true){
-        console.log("Holsa");
+    let dateInput = new Date(year,month,day);
+
+    if (validarFecha(day, month, year) == true){ // true si es una fecha valida segun calendario
+        if(isCurrentOLargerDate(day, month, year) == false){ // false si la fecha es mayor o actual
+            const difMilisegundos = currentDate - dateInput;
+            const difDate = new Date(difMilisegundos);
+
+            const totalYears = difDate.getUTCFullYear() - 1970;
+            const totalMonths = difDate.getUTCMonth()+1;
+            const totalDays = difDate.getUTCDate();
+
+            console.log(totalYears,totalMonths,totalDays);
+        }else{
+            console.log("La fecha es actual o mayor a la actual")
+        }
     };
     /*  MENSAJE DE ERROR 
     let erroryear= document.getElementById("erroryear");
