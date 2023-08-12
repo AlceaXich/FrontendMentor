@@ -55,7 +55,7 @@ function Calculadora(){
     let dateInput = new Date(year,month,day);
 
     if (validarFecha(day, month, year) == true){ // true si es una fecha valida segun calendario
-        if(isCurrentOLargerDate(day, month, year) == false){ // false si la fecha es mayor o actual
+        if(isCurrentOLargerDate(day, month, year) == false){ // false si la fecha no es mayor o actual
             const difMilisegundos = currentDate - dateInput;
             const difDate = new Date(difMilisegundos);
 

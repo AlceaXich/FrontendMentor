@@ -17,7 +17,7 @@ body {
 .container-children{
     display: flex;
     width: 40em; /* Ancho del div en píxeles */
-    height: 25em; /* Alto del div en píxeles */
+    height: 28em; /* Alto del div en píxeles */
     position: absolute;
     top: 50%;
     left: 50%;
