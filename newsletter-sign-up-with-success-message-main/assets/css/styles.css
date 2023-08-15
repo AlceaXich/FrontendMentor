@@ -1,0 +1,22 @@
+body{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Esto evita que el fondo se desplace con el contenido */
+}
+.container{
+    background-color: #36384d;
+}
+
+.row{
+    background-color: white;
+}
+
+.attribution { 
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color:#c5633c; 
+}
