@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,9 +16,12 @@
   </style>
 </head>
 <body>
-  <div>
-    <div>
-      <div>
+  <!--ESTE ES EL CONTENDOR DE COLOR OSCUROS-->
+  <div class="container">
+    <!-- ESTE ES EL CONTENDERO DONDE ESTA LA INFORMACION-->
+    <div class="row">
+      <!-- AQUI IRA LOS DETALLES -->
+      <div class="col-md-6"> 
         <h1>Stay updated!</h1>
         Join 60,000+ product managers receiving monthly updates on:
         <ul>
@@ -26,11 +30,14 @@
           <li>And much more!</li>
         </ul>  
       </div>
-      <div></div>
+      <!--AQUI IRA LA IMAGEN -->
+      <div class="col-md-6">
+        AQUI VA PARA LA IMAGEN
+      </div>
     </div>
   </div>
 
-  <!-- Sign-up form start -->
+  <!-- Sign-up form start 
 
   Stay updated!
 
@@ -45,9 +52,9 @@
 
   Subscribe to monthly newsletter
 
-  <!-- Sign-up form end -->
+   Sign-up form end 
 
-  <!-- Success message start -->
+  Success message start 
 
   Thanks for subscribing!
 
@@ -56,7 +63,7 @@
 
   Dismiss message
 
-  <!-- Success message end -->
+  Success message end -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
