@@ -1,20 +1,22 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Esta es una solución a [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Los desafíos de Frontend Mentor ayudan a mejorar las habilidades de codificación mediante la creación de proyectos realistas.
 
-## Table of contents
+## Tabla de contenido
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Frontend Mentor - Newsletter sign-up form with success message solution](#frontend-mentor---newsletter-sign-up-form-with-success-message-solution)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -22,15 +24,15 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### The challenge
 
-Users should be able to:
+Los usuarios deben ser capaces de:
 
-- Add their email and submit the form
-- See a success message with their email after successfully submitting the form
-- See form validation messages if:
-  - The field is left empty
-  - The email address is not formatted correctly
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- Agreguar su correo electrónico y envíar el formulario
+- Ver un mensaje de éxito con su correo electrónico después de enviar correctamente el formulario
+- Ver mensajes de validación de formulario si:
+   - El campo se deja vacío
+   - La dirección de correo electrónico no tiene el formato correcto
+- Ver el diseño óptimo para la interfaz según el tamaño de pantalla de su dispositivo
+- Vea los estados de desplazamiento y enfoque para todos los elementos interactivos en la página
 
 ### Screenshot
 
