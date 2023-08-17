@@ -6,10 +6,17 @@ body{
 }
 .container{
     background-color: #36384d;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 500px;
+    position: relative;
 }
 
 .row{
     background-color: white;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .attribution { 
