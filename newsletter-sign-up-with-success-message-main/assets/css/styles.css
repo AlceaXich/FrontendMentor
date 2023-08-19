@@ -15,8 +15,19 @@ body{
 .row{
     background-color: white;
     position: relative;
+    height: 50vh;
+    width: 100vh;
+    top: 25%;
+    left: 25%;
     margin-right: 5%;
     margin-left: 5%;
+}
+.bg-footer{
+    background-color: #36384d;   
+}
+.col{
+
+    margin-top: 10px;
 }
 
 .attribution { 
