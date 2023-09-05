@@ -4,37 +4,38 @@ body{
     background-position: center;
     background-attachment: fixed; /* Esto evita que el fondo se desplace con el contenido */
 }
-.container{
-    background-color: #36384d;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 500px;
-    position: relative;
+.contenedor-padre {
+  display: flex; /* Utilizamos flexbox para centrar el contenido */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  width: 90%; /* Ajustar el ancho según tus necesidades */
+  height: 90vh; /* Ajustar la altura según tus necesidades (100vh es la altura de la ventana) */
+  background-color: #36384d; /* Color de fondo para visualización */
 }
 
-.row{
-    background-color: white;
-    position: relative;
-    height: 50vh;
-    width: 100vh;
-    top: 25%;
-    left: 25%;
-    margin-right: 5%;
-    margin-left: 5%;
+.contenedor-hijo {
+  /* Estilos para el div hijo, como tamaño, colores, etc. */
+  width: 80%;
+  height: 70vh;
+  background-color:#ffffff; /* Color de fondo para visualización */
+  display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
 }
-.bg-footer{
-    background-color: #36384d;   
-}
-.col{
+.div-intern{
+  width: 50%; /* Cada div hijo ocupará la mitad del ancho del contenedor padre */
+  padding: 5px; /* Añade un espacio interior para visualización */
+  box-sizing: border-box; /* Incluye el borde en el ancho total del div */
 
-    margin-top: 10px;
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 375px) {
+  .contenedor-padre {
+    width: 100%;
+  }
 }
 
-.attribution { 
-    color: white;
-    font-size: 11px; 
-    text-align: center; 
-}
-.attribution a { 
-    color:#c5633c; 
+/* Media query para dispositivos de escritorio */
+@media (min-width: 1440px) {
+  .contenedor-padre {
+    width: 50%;
+  }
 }
