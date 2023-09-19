@@ -9,36 +9,47 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <style>
-    .row{
-      background-color: blue;
-      border: 5px solid salmon;
+    .centrado {    
+      width: 800px; /* Tamaño en píxeles */
+      height: 500px; /* Tamaño en píxeles */
+      background-color: #211e46;
+      border: 1px solid #ccc;
     }
-    .col{
-      background-color: brown;
-      border: 5px solid salmon;
-      padding: 5px;
-      margin: 5px;
+    .secundario {
+      background-color: blueviolet;
+      margin: 50px;
+      border-radius: 5%;
     }
-    .divi{
-      background-color: aqua;
-      border: 5px solid salmon;
-      padding: 5px;
-      margin: 5px;
+    .compartimientos {
+      background-color: rgb(255, 255, 255);
+      margin: 30px;
+
     }
   </style>
 </head>
 <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col-sm-6 divi">
-            1
-          </div>
-          <div class="col-sm-6 divi">
-            2
-          </div>
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="centrado">
+      <div class="secundario">
+        <div class="col-6 compartimientos ">
+          Stay updated!
+
+          Join 60,000+ product managers receiving monthly updates on:
+        
+          Product discovery and building what matters
+          Measuring to ensure updates are a success
+          And much more!
+        
+          Email address
+          email@company.com
+        
+          Subscribe to monthly newsletter
+        </div>
+        <div class="col-6">
+          <img>
         </div>
       </div>
     </div>
+</div>
 </body>
 </html>
