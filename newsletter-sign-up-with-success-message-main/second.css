@@ -1,0 +1,13 @@
+body{
+    background-image: url(./assets/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Esto evita que el fondo se desplace con el contenido */
+}
+.container{
+    height: 500px;
+    background-color: #36384d;;
+}
+.title{
+    color: brown;
+}

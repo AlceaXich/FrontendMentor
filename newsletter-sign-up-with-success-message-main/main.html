@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <style>
     body{
       background-image: url(./assets/images/background.jpg);
@@ -23,7 +24,7 @@
     }
     .secundario {
       background-color: white;
-      margin: 50px;
+      margin: 30px;
       border-radius: 20px;
     }
     .compartimientos {
@@ -39,12 +40,15 @@
     }
     button{
       background-color:#211e46 ;
-      color: white;
       margin-top: 20px;
       height: 45px;
       border-radius: 10px;
       border: none;
       width: 100%;
+    }
+    button a{
+      color: white;
+      text-decoration: none;
     }
     input{
       padding-left: 20px;
@@ -70,10 +74,8 @@
       list-style: none; /* Quita el marcador predeterminado de la lista */
     }
 
-    li::before {
-      content: "\f058"; /* Código Unicode del icono de Font Awesome que deseas usar */
-      font-family: "Font Awesome 5 Free"; /* Nombre de la fuente de Font Awesome */
-      margin-right: 10px; /* Espacio entre el icono y el texto del elemento de lista */
+    i{
+      padding: 10px;
     }
   </style>
 </head>
@@ -87,14 +89,14 @@
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
       
           <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are a success</li>
-            <li>And much more!</li>
+            <li><i class="bi bi-check-circle-fill" style="color: #fe6054;"></i>Product discovery and building what matters</li>
+            <li><i class="bi bi-check-circle-fill" style="color: #fe6054;"></i>Measuring to ensure updates are a success</li>
+            <li><i class="bi bi-check-circle-fill" style="color: #fe6054;"></i>And much more!</li>
           </ul>
           <label for="miInput">Email address</label>
 
           <input type="text" id="miInput" name="nombre" placeholder="email@company.com">     
-          <button>Subscribe to monthly newsletter</button> 
+          <button type="button"><a href="./second.html">Subscribe to monthly newsletter</a></button>
         </div>
         <div class="col-6">
           <img src="./images/imagen.png" alt="Pantalla color anaranjado">
