@@ -39,17 +39,14 @@
     img{
       border-radius: 10px;
     }
-    button{
+    .buttonSend{
       background-color:#211e46 ;
       margin-top: 20px;
       height: 45px;
       border-radius: 10px;
       border: none;
       width: 100%;
-    }
-    button a{
       color: white;
-      text-decoration: none;
     }
     input{
       padding-left: 20px;
@@ -80,12 +77,22 @@
     }
 
 
-    button:hover{
+    .buttonSend:hover{
       background-color: #fe6054;
       box-shadow: 5px 5px 5px #fe6054;
     }
     small{
+      position: relative;
+      top: 0;
+      right: 0;
+      font-size: small;
+    }
+    .error{
       color: red;
+    }
+    input.error{
+      border: 1px solid red;
+      background-color: aqua;
     }
   </style>
 </head>
@@ -103,11 +110,12 @@
             <li><i class="bi bi-check-circle-fill" style="color: #fe6054;"></i>Measuring to ensure updates are a success</li>
             <li><i class="bi bi-check-circle-fill" style="color: #fe6054;"></i>And much more!</li>
           </ul>
-          <form action="#" method="post"  onsubmit="return validarFormulario()">
+          <form action="#" onsubmit="return validarFormulario()">
             <label for="miInput">Email address</label>
-            <small id="emailError"></small>
-            <input type="email" id="email" name="nombre" placeholder="email@company.com">     
-            <button type="button"><a href="./second.html">Subscribe to monthly newsletter</a></button>
+            <small id="emailError" class="error"></small>
+            <input type="email" id="email" name="nombre" placeholder="email@company.com">  
+            
+            <input class="buttonSend" type="submit" value="Enviar">
           </form>
         </div>
         <div class="col-6">
@@ -116,5 +124,22 @@
       </div>
     </div>
 </div>
+<script>
+  function validarFormulario(){
+    let emailInput = document.getElementById('email');
+    let emailError = document.getElementById('emailError');
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if(!emailPattern.test(emailInput.value)){
+        emailError.textContent='Valid email required';
+        console.log("Hola");
+        return false;
+    }else{
+        emailError.textContent = '';
+        window.location.href = 'second.html';
+        console.log("Exitoso!")
+        return  false;
+    }
+}
+</script>
 </body>
 </html>
