@@ -1,24 +1,15 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Hanken Grotesk', sans-serif;
-}
+
 /* STYLES OF RESULT*/
-.columnA {
-    background: #7431f9;
-    border: none;
-    border-radius: 0px 0px 15px 15px;
-    padding: 10px;
+.rs-main{
+    background-color: #563bf8;
 }
-.columnA .rs-title {
-    font-weight: 500;
-}
-.rs-points {
-    background-color: rgb(97, 121, 230);
-    width: 100px;
-    height: 100px;
+.rs-title{
+    font-size: 18px;
 }
 /* STYLES OF SUMMARY*/
-
+.sm-main{
+    background-color: white;
+}
+/* STYLES OF FOOTER */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
