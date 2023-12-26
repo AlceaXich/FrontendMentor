@@ -3,6 +3,9 @@
 .rs-main{
     background-color: #563bf8;
 }
+.rs-main *{
+    padding: 10px;
+}
 .rs-title{
     font-size: 18px;
 }
