@@ -32,10 +32,17 @@
     text-align: left;
 }
 .sm-elements div {
-    margin: 20px;
-    padding: 20px;
+    padding: 15px;
+    margin-top: 15px;
     border-radius: 10px;
 }
+.sm-elements-item {
+    width: 100%;
+}
 /* STYLES OF FOOTER */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    background-color: #563bf8;
+}
+.attribution a { color: hsl(0, 0%, 100%); }
