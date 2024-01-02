@@ -28,6 +28,14 @@
 .sm-main{
     background-color: white;
 }
+.sm-main .sm-title {
+    text-align: left;
+}
+.sm-elements div {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
 /* STYLES OF FOOTER */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
