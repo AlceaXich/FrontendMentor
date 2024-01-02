@@ -9,6 +9,21 @@
 .rs-title{
     font-size: 18px;
 }
+.rs-score{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(#4b24cd 50%, #563bf8); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(228, 228, 228); /* Color del texto */
+    line-height: 1px;
+}
+.rs-score .rs-score-76 {
+    font-size: 50px;
+    color: white;
+}
 /* STYLES OF SUMMARY*/
 .sm-main{
     background-color: white;
