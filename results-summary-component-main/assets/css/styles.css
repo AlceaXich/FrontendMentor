@@ -5,6 +5,7 @@
 }
 .rs-main *{
     padding: 10px;
+    display: block;
 }
 .rs-title{
     font-size: 18px;
@@ -39,10 +40,23 @@
 .sm-elements-item {
     width: 100%;
 }
+.sm-button{
+    width: 100%;
+    border-radius: 25px;
+    background: #303b59;
+    border: none;
+}
+.sm-button a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
 /* STYLES OF FOOTER */
 .attribution { 
     font-size: 11px;
     text-align: center; 
     background-color: #563bf8;
 }
-.attribution a { color: hsl(0, 0%, 100%); }
+.attribution a { 
+    color: hsl(0, 0%, 100%); 
+}
