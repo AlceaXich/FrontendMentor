@@ -12,4 +12,4 @@ Usualmente realizare commits en 3 dias.
 1. age-calculator-app-main - **COMPLETADO**
 2. newsletter-sign-up-with-success-message-main - **COMPLETADO**
 3. results-summary-component-main - **EN PROCESO**
-##
+## Te
